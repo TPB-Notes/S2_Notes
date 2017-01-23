@@ -147,7 +147,7 @@
 
 <blockquote>
   <p>Find F(x) for the following probability density function <br>
-  <script type="math/tex; mode=display" id="MathJax-Element-87">f(x) = \left\{
+  <script type="math/tex; mode=display" id="MathJax-Element-142">f(x) = \left\{
         \begin{array}{lll}
             \frac{x^2}{18} & \quad 0 \leq x \leq 3 \\
             \frac{1}{4}(5-x) & \quad 3 \leq x \leq 5 \\
@@ -157,22 +157,20 @@
   
   <p>The function f(x) must be integrated in sections <br>
   The first section is a quadratic. If 0 &lt; c &lt; 3 then: <br>
-  <script type="math/tex; mode=display" id="MathJax-Element-88">P(X < c) = \int_{0}^{c} \frac{x^2}{18}  dx =\frac{c^3}{54}  </script> <br>
+  <script type="math/tex; mode=display" id="MathJax-Element-143">P(X < c) = \int_{0}^{c} \frac{x^2}{18}  dx =\frac{c^3}{54}  </script> <br>
   Using the above formula, P(X &lt; 3) = 0.5 <br>
   The second section is linear. If 3 &lt; c &lt; 5 then: <br>
-  <script type="math/tex; mode=display" id="MathJax-Element-89">P(X < c) = \frac{1}{2} + \int_{3}^{c} \frac{1}{4}(5-x) dx =   \frac{1}{8}(10c - c^2 -17)</script> <br>
+  <script type="math/tex; mode=display" id="MathJax-Element-144">P(X < c) = \frac{1}{2} + \int_{3}^{c} \frac{1}{4}(5-x) dx =   \frac{1}{8}(10c - c^2 -17)</script> <br>
   F(x) is then given by the piecewise function <br>
-  <script type="math/tex; mode=display" id="MathJax-Element-90">f(x) = \left\{
+  <script type="math/tex; mode=display" id="MathJax-Element-145">f(x) = \left\{
         \begin{array}{llll}
             0 & \quad x < 0 \\ 
-            \frac{c^3}{54} & \quad 0 \leq x \leq 3 \\
-            \frac{1}{8}(10c - c^2 -17) & \quad 3 \leq x \leq 5 \\
+            \frac{x^3}{54} & \quad 0 \leq x \leq 3 \\
+            \frac{1}{8}(10x - x^2 -17) & \quad 3 \leq x \leq 5 \\
             1& \quad x \geq 5 \\
         \end{array}
     \right.</script></p>
 </blockquote>
-
-
 
 <h3 id="rectangular-continuous-uniform-distribution">Rectangular / Continuous uniform distribution</h3>
 
@@ -224,15 +222,9 @@ and</p>
 
 <h3 id="sample-variance">Sample variance</h3>
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-96"> (\sigma _n)^2 = \frac{(x-\overline{x})^2}{n}</script></p>
-
-
-
-<p><script type="math/tex; mode=display" id="MathJax-Element-97"> (\sigma _n)^2 = \frac{x^2}{n} - \mu ^2</script></p>
-
-
-
-<p><script type="math/tex; mode=display" id="MathJax-Element-116"> (\sigma _n)^2 = \frac{\sum f x^2}{\sum f} - \mu ^2</script></p>
+<p><script type="math/tex; mode=display" id="MathJax-Element-166">\begin{align} (\sigma _n)^2 &= \frac{(x-\overline{x})^2}{n} \\
+&= \frac{x^2}{n} - \mu ^2 \\ 
+&= \frac{\sum f x^2}{\sum f} - \mu ^2 \end{align}</script></p>
 
 <h3 id="unbiased-estimator-of-the-population-variance">Unbiased estimator of the population variance</h3>
 
