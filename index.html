@@ -17,35 +17,29 @@
 
 <p><strong>Probability distribution</strong> A list or table showing the probability of each value occurring</p>
 
-<p>The sum of the probabilities in the probability distribution equals 1</p>
+<p>The sum of the probabilities in the probability distribution equals <script type="math/tex" id="MathJax-Element-6308">1</script></p>
 
-<p><strong>Probability function</strong> A function which provides  P(X = x) for all x</p>
+<p><strong>Probability function</strong> A function which provides  <script type="math/tex" id="MathJax-Element-6309">P(X = x)</script> for all <script type="math/tex" id="MathJax-Element-6310">x</script></p>
 
-<p><strong>Cumulative distribution function</strong> A function which provides P(X ≤ x) for all x</p>
+<p><strong>Cumulative distribution function</strong> A function which provides <script type="math/tex" id="MathJax-Element-6311">P(X \leq x)</script> for all <script type="math/tex" id="MathJax-Element-6312">x</script></p>
 
+<p>Mean <script type="math/tex" id="MathJax-Element-6313">\mu = E(X^2) = \sum x_i p_i </script> (The expectation of <script type="math/tex" id="MathJax-Element-6314">X</script>)</p>
 
-
-<p><script type="math/tex; mode=display" id="MathJax-Element-25">Mean\  \mu = E(X^2) = \sum x_i p_i  \ (The\ expectation\ of\ X)</script></p>
-
-
-
-<p><script type="math/tex; mode=display" id="MathJax-Element-26">Variance\ \sigma ^2 = E(X^2) - E(X)^2 = \sum x_i ^2 p_i - \sum x_i p_i</script></p>
-
-
+<p>Variance <script type="math/tex" id="MathJax-Element-6315">\sigma ^2 = E(X^2) - E(X)^2 = \sum x_i ^2 p_i - \sum x_i p_i</script></p>
 
 <h3 id="expectation-of-a-function-of-a-random-variable">Expectation of a function of a random variable</h3>
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-27"> E(g(X)) = \sum g(x_i)p_i </script></p>
+<p><script type="math/tex; mode=display" id="MathJax-Element-5289"> E(g(X)) = \sum g(x_i)p_i </script></p>
 
 
 
 <h3 id="mean-and-variance-of-functions-of-a-random-variable">Mean and variance of functions of a random variable</h3>
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-28"> E(aX) = aE(x) \quad E(X+b) = E(X) + b \quad E(aX + b) = aE(X) + b</script></p>
+<p><script type="math/tex; mode=display" id="MathJax-Element-5290"> E(aX) = aE(x) \quad E(X+b) = E(X) + b \quad E(aX + b) = aE(X) + b</script></p>
 
 
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-29">Var(aX) = a^2Var(x) \quad Var(X+b) = Var(X) \quad Var(aX+b) = a^2Var(X)</script></p>
+<p><script type="math/tex; mode=display" id="MathJax-Element-5291">Var(aX) = a^2Var(x) \quad Var(X+b) = Var(X) \quad Var(aX+b) = a^2Var(X)</script></p>
 
 
 
@@ -63,22 +57,18 @@
 
 
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-30">P(X=x) = \left\{
+<p><script type="math/tex; mode=display" id="MathJax-Element-5350">P(X=x) = \left\{
         \begin{array}{ll}
             e^{-\lambda} \frac{\lambda^x}{x!} & \quad x \in \mathbb{N}^0 \\
             0 & \quad otherwise
         \end{array}
     \right.</script></p>
 
-
-
 <h3 id="the-recurrence-formula">The recurrence formula</h3>
 
-<p>In order to calculate the succession of values of x: P(X=1), P(X=2), …</p>
+<p>In order to calculate the succession of values of <script type="math/tex" id="MathJax-Element-5353">x</script>: <script type="math/tex" id="MathJax-Element-5354">P(X=1), P(X=2), ...</script></p>
 
-
-
-<p><script type="math/tex; mode=display" id="MathJax-Element-31">P(X= x_n) = \frac{\lambda}{x}  \times P(X = x_{n-1})</script></p>
+<p><script type="math/tex; mode=display" id="MathJax-Element-5293">P(X= x_n) = \frac{\lambda}{x}  \times P(X = x_{n-1})</script></p>
 
 
 
@@ -86,65 +76,51 @@
 
 <p>Two or more independent Poisson distributions can be combined as follows</p>
 
-<p>If </p>
-
-
-
-<p><script type="math/tex; mode=display" id="MathJax-Element-231">X_1  \sim P(\lambda _1), X_2 \sim P(\lambda _2), ..., X_n  \sim P(\lambda _n)</script></p>
+<p>If <script type="math/tex" id="MathJax-Element-5365">X_1  \sim P(\lambda _1), X_2 \sim P(\lambda _2), ..., X_n  \sim P(\lambda _n)</script></p>
 
 <p>then </p>
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-268">\sum _{k=1} ^n X_k \sim P(\sum _{k=1} ^n \lambda _k )</script></p>
-
-<p>This also shows that if</p>
 
 
+<p><script type="math/tex; mode=display" id="MathJax-Element-6522">\sum _{k=1} ^n X_k \sim P(\sum _{k=1} ^n \lambda _k )</script></p>
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-290">X \sim P(\lambda)</script></p>
+<p>This also shows that if <script type="math/tex" id="MathJax-Element-6523">X \sim P(\lambda)</script></p>
 
-<p>then</p>
+<p>then <script type="math/tex" id="MathJax-Element-6524">nX \sim P(n \lambda)</script></p>
 
-
-
-<p><script type="math/tex; mode=display" id="MathJax-Element-301">nX \sim P(n \lambda)</script></p>
-
-<p>Example-</p>
+<p>Example</p>
 
 <blockquote>
-  <p>At a checkpoint an average of 300 cars pass per hour and the mean time between lorries is 5 minutes.  <br>
-  Find the probability that exactly 6 vehicles pass the checkpoint in a 1 minute period.</p>
+  <p>At a checkpoint an average of <script type="math/tex" id="MathJax-Element-6525">300</script> cars pass per hour and the mean time between lorries is <script type="math/tex" id="MathJax-Element-6526">5</script> minutes.  <br>
+  Find the probability that exactly <script type="math/tex" id="MathJax-Element-6527">6</script> vehicles pass the checkpoint in a <script type="math/tex" id="MathJax-Element-6528">1</script> minute period.</p>
   
   <hr>
   
-  <p>300 cars per hour → 5 cars per minute <br>
-  1 lorry per 5 minutes → 0.2 lorries per minute</p>
+  <p><script type="math/tex" id="MathJax-Element-6529">300</script> cars per hour <script type="math/tex" id="MathJax-Element-6530">\to</script> <script type="math/tex" id="MathJax-Element-6531">5</script> cars per minute <br>
+  <script type="math/tex" id="MathJax-Element-6532">1</script> lorry per <script type="math/tex" id="MathJax-Element-6533">5</script> minutes <script type="math/tex" id="MathJax-Element-6534">\to</script> <script type="math/tex" id="MathJax-Element-6535">0.2</script> lorries per minute</p>
   
-  <p>5.2 vehicles per minute <br>
-   <script type="math/tex; mode=display" id="MathJax-Element-302">P(X = 6) = e^{-5.2}\frac{5.2^6}{6!} \approx  0.1515</script></p>
+  <p><script type="math/tex" id="MathJax-Element-6536">5.2</script> vehicles per minute <br>
+   <script type="math/tex" id="MathJax-Element-6537">P(X = 6) = e^{-5.2}\times \frac{5.2^6}{6!} \approx  0.1515</script></p>
 </blockquote>
 
 <h3 id="binomial">Binomial</h3>
 
 <p>Questions on the poisson distribution can include the use of the binomial theorem.</p>
 
-<p>Example (Following from the above example)-</p>
+<p>Example (Following from the above example)</p>
 
 <blockquote>
-  <p>What is the probability that exactly 6 cars pass the checkpoint in at least 3 or the next 4 minutes?</p>
+  <p>What is the probability that exactly <script type="math/tex" id="MathJax-Element-6565">6</script> cars pass the checkpoint in at least <script type="math/tex" id="MathJax-Element-6566">3</script> or the next <script type="math/tex" id="MathJax-Element-6567">4</script> minutes?</p>
   
   <hr>
   
-  <p>Probability of success = 0.1515,  n = 4 <br>
-   <script type="math/tex; mode=display" id="MathJax-Element-33">\begin{align} P(X \geq 3) &= P(X = 3) + P(X = 4)  \\ &= {4 \choose 3}(0.1515)^3 + {4 \choose 4}(0.1515)^4 \\ &\approx 0.0123 \end{align}</script></p>
+  <p>Probability of success = <script type="math/tex" id="MathJax-Element-6568">0.1515</script>,  <script type="math/tex" id="MathJax-Element-6569">n = 4</script> <br>
+   <script type="math/tex; mode=display" id="MathJax-Element-6570">\begin{align} P(X \geq 3) &= P(X = 3) + P(X = 4)  \\ &= {4 \choose 3}(0.1515)^3 + {4 \choose 4}(0.1515)^4 \\ &\approx 0.0123 \end{align}</script></p>
 </blockquote>
-
-
 
 <h3 id="mean-and-variance-of-a-poisson-distribution">Mean and variance of a Poisson distribution</h3>
 
-<p>Mean = Variance = λ</p>
-
-
+<p>Mean = Variance = <script type="math/tex" id="MathJax-Element-5405">\lambda</script></p>
 
 <h2 id="continuous-random-variables">Continuous random variables</h2>
 
@@ -152,30 +128,30 @@
 
 
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-58">P(X = 0) = 0 \\ P(X < t) = P(X \leq t)</script></p>
+<p><script type="math/tex; mode=display" id="MathJax-Element-5300">P(X = 0) = 0 \\ P(X < t) = P(X \leq t)</script></p>
 
-<h3 id="probability-density-functions-fx">Probability density functions f(x)</h3>
+
+
+<h3 id="probability-density-functions-fx">Probability density functions <script type="math/tex" id="MathJax-Element-6571">f(x)</script></h3>
 
 <ul>
 <li>The area under the graph of a probability density function represents the probability</li>
-<li>The total area under the graph must always equal 1</li>
+<li>The total area under the graph must always equal <script type="math/tex" id="MathJax-Element-6572">1</script></li>
 </ul>
 
-
-
-<h3 id="cumulative-distribution-function-fx">Cumulative distribution function F(x)</h3>
+<h3 id="cumulative-distribution-function-fx">Cumulative distribution function <script type="math/tex" id="MathJax-Element-6240">F(x)</script></h3>
 
 <ul>
-<li>Is the integral of  the probability density function f(x)</li>
-<li>Gives the probability that the values is less than x. P(X &lt; x) = P(X ≤ x)</li>
-<li><p>Useful when finding medians and percentiles. e.g. F(x) = 0.5 gives the median</p>
+<li>Is the integral of  the probability density function <script type="math/tex" id="MathJax-Element-6241">f(x)</script></li>
+<li>Gives the probability that the values is less than <script type="math/tex" id="MathJax-Element-6242">x</script>. <script type="math/tex" id="MathJax-Element-6243">P(X < x) = P(X \leq x)</script></li>
+<li><p>Useful when finding medians and percentiles. e.g. <script type="math/tex" id="MathJax-Element-6244">F(x) = 0.5</script> gives the median</p>
 
-<p>Example-</p></li>
+<p>Example</p></li>
 </ul>
 
 <blockquote>
-  <p>Find F(x) for the following probability density function <br>
-  <script type="math/tex; mode=display" id="MathJax-Element-107">f(x) = \left\{
+  <p>Find <script type="math/tex" id="MathJax-Element-6245">F(x)</script> for the following probability density function <br>
+  <script type="math/tex; mode=display" id="MathJax-Element-6246">f(x) = \left\{
         \begin{array}{lll}
             \frac{x^2}{18} & \quad 0 \leq x \leq 3 \\
             \frac{1}{4}(5-x) & \quad 3 \leq x \leq 5 \\
@@ -185,14 +161,14 @@
   
   <hr>
   
-  <p>The function f(x) must be integrated in sections <br>
-  The first section is a quadratic. If 0 &lt; c &lt; 3 then <br>
-  <script type="math/tex; mode=display" id="MathJax-Element-108">P(X < c) = \int_{0}^{c} \frac{x^2}{18}  dx =\frac{c^3}{54}  </script> <br>
-  Using the above formula, P(X &lt; 3) = 0.5 <br>
-  The second section is linear. If 3 &lt; c &lt; 5 then <br>
-  <script type="math/tex; mode=display" id="MathJax-Element-109">P(X < c) = \frac{1}{2} + \int_{3}^{c} \frac{1}{4}(5-x) dx =   \frac{1}{8}(10c - c^2 -17)</script> <br>
-  F(x) is then given by the piecewise function <br>
-  <script type="math/tex; mode=display" id="MathJax-Element-110">f(x) = \left\{
+  <p>The function <script type="math/tex" id="MathJax-Element-6247">f(x)</script> must be integrated in sections <br>
+  The first section is a quadratic. If <script type="math/tex" id="MathJax-Element-6248">0 < c < 3</script> then <br>
+  <script type="math/tex; mode=display" id="MathJax-Element-6249">P(X < c) = \int_{0}^{c} \frac{x^2}{18}  dx =\frac{c^3}{54}  </script> <br>
+  Using the above formula, <script type="math/tex" id="MathJax-Element-6250">P(X < 3) = 0.5</script> <br>
+  The second section is linear. If <script type="math/tex" id="MathJax-Element-6251">3 < c < 5</script> then <br>
+  <script type="math/tex; mode=display" id="MathJax-Element-6252">P(X < c) = \frac{1}{2} + \int_{3}^{c} \frac{1}{4}(5-x) dx =   \frac{1}{8}(10c - c^2 -17)</script> <br>
+  <script type="math/tex" id="MathJax-Element-6253">F(x)</script> is then given by the piecewise function <br>
+  <script type="math/tex; mode=display" id="MathJax-Element-6254">f(x) = \left\{
         \begin{array}{llll}
             0 & \quad x < 0 \\ 
             \frac{x^3}{54} & \quad 0 \leq x \leq 3 \\
@@ -208,7 +184,7 @@
 
 
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-39">f(x) = \left\{
+<p><script type="math/tex; mode=display" id="MathJax-Element-5305">f(x) = \left\{
         \begin{array}{ll}
             \frac{1}{b-a} & \quad a < x < b \\
             0 & \quad otherwise
@@ -218,7 +194,7 @@ and</p>
 
 
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-40">F(x) = \left\{
+<p><script type="math/tex; mode=display" id="MathJax-Element-5306">F(x) = \left\{
         \begin{array}{ll}
             0 & \quad x \leq a \\
             \frac{x-a}{b-a} & \quad a \leq x \leq b \\
@@ -230,15 +206,13 @@ and</p>
 
 <h4 id="mean-and-variance-of-a-rectangular-distribution">Mean and variance of a rectangular distribution</h4>
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-41">E(X) = \mu = \frac{1}{2}(a+b)</script></p>
+<p><script type="math/tex; mode=display" id="MathJax-Element-5307">E(X) = \mu = \frac{1}{2}(a+b)</script></p>
 
 
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-42">Var(X) = \sigma^2 = \frac{1}{12}(b-a)^2 </script></p>
+<p><script type="math/tex; mode=display" id="MathJax-Element-6194">Var(X) = \sigma^2 = \frac{1}{12}(b-a)^2 </script></p>
 
-<p>Given the mean and the variance of a rectangular distribution, a and b can be found by solving simultaneously.</p>
-
-
+<p>Given the mean and the variance of a rectangular distribution, <script type="math/tex" id="MathJax-Element-6195">a</script> and <script type="math/tex" id="MathJax-Element-6196">b</script> can be found by solving simultaneously.</p>
 
 <h2 id="estimation">Estimation</h2>
 
@@ -246,13 +220,11 @@ and</p>
 
 <h3 id="mean">Mean</h3>
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-43">\overline{x} = \frac{\sum x}{n} \\ \overline{x} = \frac{\sum fx}{\sum f}</script></p>
-
-
+<p><script type="math/tex; mode=display" id="MathJax-Element-5679">\begin{align} \overline{x} &= \frac{\sum x}{n} \\ &= \frac{\sum fx}{\sum f} \end{align}</script></p>
 
 <h3 id="sample-variance">Sample variance</h3>
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-44">\begin{align} (\sigma _n)^2 &= \frac{(x-\overline{x})^2}{n} \\
+<p><script type="math/tex; mode=display" id="MathJax-Element-5310">\begin{align} (\sigma _n)^2 &= \frac{(x-\overline{x})^2}{n} \\
 &= \frac{x^2}{n} - \mu ^2 \\ 
 &= \frac{\sum f x^2}{\sum f} - \mu ^2 \end{align}</script></p>
 
@@ -260,7 +232,7 @@ and</p>
 
 <h3 id="unbiased-estimator-of-the-population-variance">Unbiased estimator of the population variance</h3>
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-45">(\sigma _{n-1})^2 = \frac{n}{n-1} \times (\sigma _n)^2</script></p>
+<p><script type="math/tex; mode=display" id="MathJax-Element-5311">(\sigma _{n-1})^2 = \frac{n}{n-1} \times (\sigma _n)^2</script></p>
 
 
 
@@ -270,9 +242,7 @@ and</p>
 
 <h4 id="interpretation-of-confidence-intervals">Interpretation of confidence intervals</h4>
 
-<p>For a k percent confidence interval for the mean, across a number of different samples k percent of the confidence intervals for the mean will contain the true population mean.</p>
-
-
+<p>For a <script type="math/tex" id="MathJax-Element-5681">k</script> percent confidence interval for the mean, across a number of different samples <script type="math/tex" id="MathJax-Element-5682">k</script> percent of the confidence intervals for the mean will contain the true population mean.</p>
 
 <h4 id="writing-confidence-intervals">Writing confidence intervals</h4>
 
@@ -286,40 +256,36 @@ and</p>
 
 
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-46">\overline{x} \  \pm \ Z_{\alpha} \times \sqrt{\frac{\sigma ^2}{n}}</script></p>
+<p><script type="math/tex; mode=display" id="MathJax-Element-5728">\overline{x} \  \pm \ Z_{\alpha} \times \sqrt{\frac{\sigma ^2}{n}}</script></p>
 
-<p>If the population variance is unknown, but the sample size is greater than 30 the Z tables are used due to central limit theorem. The above formula is still used, with the following assumptions:</p>
+<p>If the population variance is unknown, but the sample size is greater than 30 the <script type="math/tex" id="MathJax-Element-5729">Z</script> tables are used due to central limit theorem. The above formula is still used, with the following assumptions:</p>
 
 <ul>
 <li>The data can be regarded as a random sample</li>
 <li>Central limit theorem allows the distribution to be assumed to follow a normal distribution</li>
 </ul>
 
-<p>If the population variance is unknown, and the sample size is less than 30, the t tables are used with ν = n - 1 degrees of freedom. The confidence interval is then given by:</p>
+<p>If the population variance is unknown, and the sample size is less than <script type="math/tex" id="MathJax-Element-5730">30</script>, the <script type="math/tex" id="MathJax-Element-5731">t</script> tables are used with <script type="math/tex" id="MathJax-Element-5732">\nu = n - 1</script> degrees of freedom. The confidence interval is then given by:</p>
 
+<p><script type="math/tex; mode=display" id="MathJax-Element-6181">\overline{x} \  \pm \ t_{\alpha} \times \sqrt{\frac{S^2}{n}}</script></p>
 
-
-<p><script type="math/tex; mode=display" id="MathJax-Element-47">\overline{x} \  \pm \ t_{\alpha} \times \sqrt{\frac{S^2}{n}}</script></p>
-
-<p>Example-</p>
+<p>Example</p>
 
 <blockquote>
-  <p>20 bottles are selected from a production line. The volume of liquid in each is recorded as x ml <br>
-  <script type="math/tex; mode=display" id="MathJax-Element-48">\sum x = 1518.9 \quad \sum (x - \overline{x})^2 = 7.2895</script> <br>
-  Stating any assumptions made, construct a 95% confidence interval for the mean.</p>
+  <p><script type="math/tex" id="MathJax-Element-6182">20</script> bottles are selected from a production line. The volume of liquid in each is recorded as <script type="math/tex" id="MathJax-Element-6183">x</script> ml <br>
+  <script type="math/tex; mode=display" id="MathJax-Element-6184">\sum x = 1518.9 \quad \sum (x - \overline{x})^2 = 7.2895</script> <br>
+  Stating any assumptions made, construct a <script type="math/tex" id="MathJax-Element-6185">95\%</script> confidence interval for the mean.</p>
   
   <hr>
   
-  <p><script type="math/tex; mode=display" id="MathJax-Element-49">n = 20 \\ mean = \frac{\sum x}{n} \\ sample\ variance = \frac{\sum (x - \overline{x})^2}{n} \\ unbiased\ estimator\ of\ population\ variance = \frac{\sum (x - \overline{x})^2}{n-1}</script> <br>
-  Using  ν = 20 - 1 = 19 degrees of freedom, the 95% t values is 2.093 <br>
+  <p><script type="math/tex; mode=display" id="MathJax-Element-6186">n = 20 \\ mean = \frac{\sum x}{n} \\ sample\ variance = \frac{\sum (x - \overline{x})^2}{n} \\ unbiased\ estimator\ of\ population\ variance = \frac{\sum (x - \overline{x})^2}{n-1}</script> <br>
+  Using  <script type="math/tex" id="MathJax-Element-6187">\nu = 20 - 1 = 19</script> degrees of freedom, the <script type="math/tex" id="MathJax-Element-6188">95\%\ t%</script> values is <script type="math/tex" id="MathJax-Element-6189">2.093</script> <br>
   The confidence interval is then given by <br>
-  <script type="math/tex; mode=display" id="MathJax-Element-50">75.945\ \pm \ 2.0893 \times \sqrt{\frac{0.38366}{20}} = (75.66, 76.23)</script> <br>
+  <script type="math/tex; mode=display" id="MathJax-Element-6190">75.945\ \pm \ 2.0893 \times \sqrt{\frac{0.38366}{20}} = (75.66, 76.23)</script> <br>
   The assumptions made were that  <br>
     - The contents of the bottles are normally distributed <br>
     - The sample was selected randomly</p>
 </blockquote>
-
-
 
 <h2 id="hypothesis-testing">Hypothesis testing</h2>
 
@@ -333,29 +299,23 @@ and</p>
 
 <p>State the null hypothesis and the alternate hypothesis.</p>
 
-<p>H<sub>0</sub> : µ = a</p>
+<p><script type="math/tex" id="MathJax-Element-5917">H_0:\ \mu = a</script></p>
 
-<p>H<sub>1</sub> : µ  ≠ a</p>
+<p><script type="math/tex" id="MathJax-Element-5918">H_1:\ \mu \neq a</script></p>
 
 <p>Two tailed test</p>
-
-
 
 <h4 id="step-2">Step 2</h4>
 
 <p>Choose the test statistic</p>
 
-<p>For a known variance, or n &gt; 30</p>
+<p>For a known variance, or <script type="math/tex" id="MathJax-Element-5919">n > 30</script></p>
 
+<p><script type="math/tex; mode=display" id="MathJax-Element-5921"> Z = \frac{x - \mu}{ \sqrt{\frac{\sigma ^2}{n}}}</script></p>
 
+<p>For an unknown variance, and <script type="math/tex" id="MathJax-Element-5922">n < 30</script></p>
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-51"> Z = \frac{x - \mu}{ \sqrt{\frac{\sigma ^2}{n}}}</script></p>
-
-<p>For an unknown variance, and n &lt; 30</p>
-
-
-
-<p><script type="math/tex; mode=display" id="MathJax-Element-52"> t = \frac{x - \mu}{ \sqrt{\frac{\sigma ^2}{n}}}</script></p>
+<p><script type="math/tex; mode=display" id="MathJax-Element-5318"> t = \frac{x - \mu}{ \sqrt{\frac{\sigma ^2}{n}}}</script></p>
 
 
 
@@ -363,20 +323,16 @@ and</p>
 
 <p>Use tables to find the critical value</p>
 
-<p>If a t distribution is used, there are n - 1 degrees of freedom</p>
+<p>If a <script type="math/tex" id="MathJax-Element-5925">t</script> distribution is used, there are <script type="math/tex" id="MathJax-Element-5926">n - 1</script> degrees of freedom</p>
 
 <p>State the critical value, or draw a graph and mark it with the critical value and the test statistic</p>
-
-
 
 <h4 id="step-4">Step 4</h4>
 
 <p>Conclude the hypothesis test</p>
 
-<p>As [condition] there is / isn’t significant evidence at the % level that the mean differs from a. <br>
-We therefore reject/accept H<sub>0</sub> and conclude that… [context].</p>
-
-
+<p>As [condition] there is / isn’t significant evidence at the <script type="math/tex" id="MathJax-Element-5930">\%</script> level that the mean differs from a. <br>
+We therefore reject/accept <script type="math/tex" id="MathJax-Element-5931">H_0</script> and conclude that… [context].</p>
 
 <h3 id="errors">Errors</h3>
 
@@ -392,21 +348,17 @@ We therefore reject/accept H<sub>0</sub> and conclude that… [context].</p>
 
 <h4 id="type-2-error">Type 2 error</h4>
 
-<p>This type of error occurs when H<sub>0</sub> is accepted, when it is in fact false.</p>
+<p>This type of error occurs when <script type="math/tex" id="MathJax-Element-5971">H_0</script> is accepted, when it is in fact false.</p>
 
-<p>The probability of a type 2 error is not fixed, since it depends upon the extent to which the value of  µ deviates from the value given in H<sub>0</sub>. If the value of µ is closed to the value given in H<sub>0</sub> the probability of a type 2 error is large.</p>
-
-
+<p>The probability of a type 2 error is not fixed, since it depends upon the extent to which the value of <script type="math/tex" id="MathJax-Element-5972">\mu</script> deviates from the value given in <script type="math/tex" id="MathJax-Element-5973">H_0</script>. If the value of <script type="math/tex" id="MathJax-Element-5974">\mu</script> is closed to the value given in <script type="math/tex" id="MathJax-Element-5975">H_0</script> the probability of a type 2 error is large.</p>
 
 <h2 id="chi-squared-goodness-of-fit-test">Chi-squared goodness of fit test</h2>
 
 <ul>
 <li>Used for testing bias, or the independence of variables</li>
 <li>The test statistic involves squares, as we are only interested in upper limit critical values</li>
-<li>H<sub>0</sub> is always that the variables are independent</li>
+<li><script type="math/tex" id="MathJax-Element-5976">H_0</script> is always that the variables are independent</li>
 </ul>
-
-
 
 <h3 id="calculating">Calculating</h3>
 
@@ -418,11 +370,9 @@ We therefore reject/accept H<sub>0</sub> and conclude that… [context].</p>
 
 
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-53">\frac{\sum row \times \sum column}{total}</script></p>
+<p><script type="math/tex; mode=display" id="MathJax-Element-5977">\frac{\sum row \times \sum column}{total}</script></p>
 
-<p>If the expected frequency of a particular value is less than 5, its row or column must be merged.</p>
-
-
+<p>If the expected frequency of a particular value is less than <script type="math/tex" id="MathJax-Element-5978">5</script>, its row or column must be merged.</p>
 
 <h4 id="the-test-statistic">The test statistic</h4>
 
@@ -430,23 +380,21 @@ We therefore reject/accept H<sub>0</sub> and conclude that… [context].</p>
 
 
 
-<p><script type="math/tex; mode=display" id="MathJax-Element-54">\chi ^2 = \sum \frac{(O_i -  E_i)^2}{E_i}</script></p>
+<p><script type="math/tex; mode=display" id="MathJax-Element-5988">\chi ^2 = \sum \frac{(O_i -  E_i)^2}{E_i}</script></p>
 
-<p>For the case where the table is 2x2 we have only one degree of freedom, and the test statistic is</p>
+<p>For the case where the table is <script type="math/tex" id="MathJax-Element-5989">2\times2</script> we have only one degree of freedom, and the test statistic is</p>
 
-
-
-<p><script type="math/tex; mode=display" id="MathJax-Element-55">\chi ^2 = \sum \frac{(|O_i -  E_i| - 0.5)^2}{E_i}</script></p>
+<p><script type="math/tex; mode=display" id="MathJax-Element-5321">\chi ^2 = \sum \frac{(|O_i -  E_i| - 0.5)^2}{E_i}</script></p>
 
 
 
 <h4 id="the-critical-value">The critical value</h4>
 
-<p>The degrees of freedom, ν , of a chi-squared contingency table is given by n - 1 where n is the number of groups in the table.</p>
+<p>The degrees of freedom, <script type="math/tex" id="MathJax-Element-6169">\nu</script> , of a chi-squared contingency table is given by <script type="math/tex" id="MathJax-Element-6170">n - 1</script> where <script type="math/tex" id="MathJax-Element-6171">n</script> is the number of groups in the table.</p>
 
 <p>The critical value is then found from the table or from a calculator.</p>
 
-<p>Example of the comparison of two variables-</p>
+<p>Example of the comparison of two variables</p>
 
 <blockquote>
   <p>Natives of England, Africa, and China were classified by blood group</p>
@@ -485,12 +433,12 @@ We therefore reject/accept H<sub>0</sub> and conclude that… [context].</p>
 </tbody></table>
 
   
-  <p>Is there any evidence at the 5% level that there is a connection between blood group and nationality?</p>
+  <p>Is there any evidence at the <script type="math/tex" id="MathJax-Element-6172">5\%</script> level that there is a connection between blood group and nationality?</p>
   
   <hr>
   
-  <p>H<sub>0</sub>: There is no connection between blood group and nationality <br>
-   H<sub>1</sub> There is a connection between blood group and nationality</p>
+  <p><script type="math/tex" id="MathJax-Element-6173">H_0</script>: There is no connection between blood group and nationality <br>
+   <script type="math/tex" id="MathJax-Element-6174">H_1</script>: There is a connection between blood group and nationality</p>
   
   <p>For each cell we find the expected value by multiplying the row total and column total before dividing by the table total</p>
   
@@ -524,11 +472,11 @@ We therefore reject/accept H<sub>0</sub> and conclude that… [context].</p>
 </tbody></table>
 
   
-  <p>We have that ν = (4-1)(3-1) = 6 degrees of freedom and then that  <br>
-   <script type="math/tex; mode=display" id="MathJax-Element-56">\chi^2 _6 (5\%) = 12.592</script> <br>
+  <p>We have that <script type="math/tex" id="MathJax-Element-6175">\nu = (4-1)(3-1) = 6</script> degrees of freedom and then that  <br>
+   <script type="math/tex; mode=display" id="MathJax-Element-6176">\chi^2 _6 (5\%) = 12.592</script> <br>
    From the table of expected frequencies <br>
-   <script type="math/tex; mode=display" id="MathJax-Element-57">\sum \frac{(O_i - E_i)^2}{E_i} = 8.39</script></p>
+   <script type="math/tex; mode=display" id="MathJax-Element-6177">\sum \frac{(O_i - E_i)^2}{E_i} = 8.39</script></p>
   
-  <p>As 8.39 &lt; 12.592 we do not reject H<sub>0</sub> at the 5% level and therefore conclude that there is no connection between nationality and blood group.</p>
+  <p>As <script type="math/tex" id="MathJax-Element-6178">8.39 < 12.592</script> we do not reject <script type="math/tex" id="MathJax-Element-6179">H_0</script> at the <script type="math/tex" id="MathJax-Element-6180">5\%</script> level and therefore conclude that there is no connection between nationality and blood group.</p>
 </blockquote></div></body>
 </html>
