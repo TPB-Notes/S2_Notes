@@ -11,10 +11,9 @@
 alert("Hopefully this works");
 document.addEventListener('DOMContentLoaded', function() {
     alert("Ready!");
-    headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+    headers = getElementsByTagName("h");
     console.log("Searching for headers.");
     console.log(headers);
-    console.log(getElementsByTagName("h1"));
 }, false);       
     
 </script>        
