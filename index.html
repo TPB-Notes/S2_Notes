@@ -11,9 +11,23 @@
 alert("Hopefully this works");
 document.addEventListener('DOMContentLoaded', function() {
     alert("Ready!");
-    headers = getElementsByTagName("h");
+    headers = documents.getElementsByTagName("h");
     console.log("Searching for headers.");
     console.log(headers);
+    var h1 = document.getElementsByTagName('h1'), // Create a collection of H1 elements
+        ul = document.createElement('ul'),        // Create a new UL element
+        parent = h1[0].parentNode,                // Store the parent node of the first H1
+        n, len, li;                               // Declare some variables to use later
+    for (n = 0, len = h1.length; n < len; n++) {  // Iterate through H1 elements
+        li = document.createElement('li');        // Create a new LI element
+        li.appendChild(h1[0]);                    // Move a H1 to LI (Live collection, 0 instead of n as index)
+        // Or switch the line above to the next two lines, if you want to remove the H1 and list the content only
+        // li.innerHTML = h1[0].innerHTML;
+        // h1[0].parentElement.removeChild(h1[0]);// If you want to preserve H1s, remove this line
+        ul.appendChild(li);                       // Append the newly-created LI to the UL
+    }
+    parent.appendChild(ul);                       // Append the UL to the parent
+    
 }, false);       
     
 </script>        
