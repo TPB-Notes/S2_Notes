@@ -9,19 +9,33 @@
 
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function() {
-    var h1 = document.getElementsByTagName('h1'), // Create a collection of H1 elements
-        ul = document.createElement('ul'),        // Create a new UL element
-        parent = h1[0].parentNode,                // Store the parent node of the first H1
-        n, len, li;                               // Declare some variables to use later
-    for (n = 0, len = h1.length; n < len; n++) {  // Iterate through H1 elements
-        li = document.createElement('li');        // Create a new LI element
-        li.appendChild(h1[0]);                    // Move a H1 to LI (Live collection, 0 instead of n as index)
-        // Or switch the line above to the next two lines, if you want to remove the H1 and list the content only
-        // li.innerHTML = h1[0].innerHTML;
-        // h1[0].parentElement.removeChild(h1[0]);// If you want to preserve H1s, remove this line
-        ul.appendChild(li);                       // Append the newly-created LI to the UL
-    }
-    parent.appendChild(ul);                       // Append the UL to the parent
+    var headers = document.getElementsByTagName('h');
+    if(headers.length > 0) {
+        var depth = -1;
+        var count = 0;
+        var parent = [];
+        var list = "<ul>";
+        for(header in headers) {
+            if(header[1] == depth) {
+                if(count > 0) {
+                    list += "</ul>;
+                }
+                list += "</li>";
+            } else if(count == 0) {
+                list += "<ul>";
+            }
+            list += "<li>;
+            list += "<a href='#" + header.innerHtml + "'>" + header.innerHtml + "</a>";
+            if(header[1] = depth + 1) {
+                count++;
+            } else {
+                count = 0;
+            }
+            depth = header[1];
+        }
+        
+        
+    } 
     
 }, false);       
     
