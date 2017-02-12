@@ -9,7 +9,7 @@
 
 <script type="text/javascript">
 document.addEventListener('DOMContentLoaded', function() {
-    var headers = document.getElementsByTagName('h');
+    var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6")
     console.log("Headers " + headers.length);
     if(headers.length > 0) {
         var depth = -1;
