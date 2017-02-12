@@ -8,12 +8,7 @@
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 
 <script type="text/javascript">
-alert("Hopefully this works");
 document.addEventListener('DOMContentLoaded', function() {
-    alert("Ready!");
-    headers = documents.getElementsByTagName("h");
-    console.log("Searching for headers.");
-    console.log(headers);
     var h1 = document.getElementsByTagName('h1'), // Create a collection of H1 elements
         ul = document.createElement('ul'),        // Create a new UL element
         parent = h1[0].parentNode,                // Store the parent node of the first H1
