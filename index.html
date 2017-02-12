@@ -11,12 +11,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6")
     console.log("Headers " + headers.length);
+    console.log("Headers " + headers);
     if(headers.length > 0) {
         var depth = -1;
         var count = 0;
         var parent = [];
         var list = "<ul>";
         for(header in headers) {
+            console.log("Header " + header);
             if(header[1] == depth) {
                 if(count > 0) {
                     list += "</ul>";
