@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
         for(header in headers) {
             if(header[1] == depth) {
                 if(count > 0) {
-                    list += "</ul>;
+                    list += "</ul>";
                 }
                 list += "</li>";
             } else if(count == 0) {
@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             depth = header[1];
         }
+        console.log("Something " + list);
         
         
     } 
