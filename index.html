@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var count = 0;
         var parent = [];
         var list = "<ul>";
-        for each (var header in headers) {
+        headers.forEach(function(header) {
             console.log("Header " + header);
             if(header[1] == depth) {
                 if(count > 0) {
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 count = 0;
             }
             depth = header[1];
-        }
+        });
         console.log("Something " + list);
         
         
